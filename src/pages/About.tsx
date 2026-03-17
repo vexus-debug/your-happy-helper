@@ -34,7 +34,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "Founded", title: "Rubi Smile Opens", desc: "Established at No 6 November Street, Chief Palace Estate, Karu, Abuja with a vision to provide accessible, quality dental care." },
+  { year: "Founded", title: "Rubi Smile Opens", desc: "Established at No 6 November Street, near Chief Palace Layout, Karu, Abuja with a vision to provide accessible, quality dental care." },
   { year: "Growing", title: "Expanding Services", desc: "Added orthodontics, cosmetic dentistry, and pediatric care to serve more needs." },
   { year: "Today", title: "1000+ Happy Patients", desc: "A trusted name in dental care, serving families across Abuja and beyond." },
   { year: "Future", title: "Always Improving", desc: "Continuously investing in technology, training, and patient experience." },
