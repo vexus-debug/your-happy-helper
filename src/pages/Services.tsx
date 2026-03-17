@@ -86,7 +86,7 @@ const serviceCategories = [
   {
     icon: Heart,
     title: "Pediatric Dentistry",
-    color: "text-teal",
+    color: "text-accent",
     bgColor: "bg-accent/10",
     items: [
       "Child-friendly dental care",
