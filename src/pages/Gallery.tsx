@@ -37,6 +37,7 @@ const images = [
   { src: treatment2, alt: "Professional dental care by our team", category: "Treatment" },
   { src: treatment3, alt: "Expert dental procedure with assistant", category: "Treatment" },
   { src: orthodontics, alt: "Orthodontic braces treatment result", category: "Treatment" },
+  { src: clinicExterior2, alt: "Rubi Smile Dental Clinic building exterior", category: "Clinic" },
 ];
 
 const categories = ["All", ...Array.from(new Set(images.map((img) => img.category)))];
