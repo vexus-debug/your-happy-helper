@@ -34,7 +34,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "Founded", title: "Rubi Smile Opens", desc: "Established at No 6 November Street, Chief Palace Estate, Karu, Abuja with a vision to provide accessible, quality dental care." },
+  { year: "Founded", title: "Rubi Smile Opens", desc: "Established at No 6 November Street, near Chief Palace Layout, Karu, Abuja with a vision to provide accessible, quality dental care." },
   { year: "Growing", title: "Expanding Services", desc: "Added orthodontics, cosmetic dentistry, and pediatric care to serve more needs." },
   { year: "Today", title: "1000+ Happy Patients", desc: "A trusted name in dental care, serving families across Abuja and beyond." },
   { year: "Future", title: "Always Improving", desc: "Continuously investing in technology, training, and patient experience." },
@@ -92,7 +92,7 @@ const About = () => (
               A family practice with a <span className="text-accent">gentle</span> touch
             </h2>
             <p className="font-body text-muted-foreground mt-6 leading-relaxed">
-              Located at No 6 November Street, Chief Palace Estate, Karu, Abuja, Rubi Smile Dental Clinic was founded with a simple mission: to make quality dental care accessible, comfortable, and affordable for everyone.
+              Located at No 6 November Street, near Chief Palace Layout, Karu, Abuja, Rubi Smile Dental Clinic was founded with a simple mission: to make quality dental care accessible, comfortable, and affordable for everyone.
             </p>
             <p className="font-body text-muted-foreground mt-4 leading-relaxed">
               We serve families, young professionals, and NHIS patients with comprehensive dental care. Our clinic combines modern equipment with a warm, patient-first approach that puts your comfort above all else.
@@ -286,7 +286,7 @@ const About = () => (
             </h2>
             <div className="mt-8 space-y-5">
               {[
-                { icon: MapPin, label: "Location", value: "No 6 November Street, Chief Palace Estate, Karu, Abuja" },
+                { icon: MapPin, label: "Location", value: "No 6 November Street, near Chief Palace Layout, Karu, Abuja" },
                 { icon: Clock, label: "Hours", value: "Mon – Fri: 9:00 AM – 5:30 PM | Sat: 9:00 AM – 3:30 PM" },
                 { icon: MessageCircle, label: "WhatsApp", value: "0903 853 5214" },
                 { icon: Phone, label: "Call / Enquiry", value: "0902 440 3837" },
