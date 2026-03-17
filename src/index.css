@@ -51,9 +51,15 @@
     --slate-deep: 195 55% 15%;
     --warm-gray: 190 10% 97%;
 
+    /* Section backgrounds */
+    --section-warm: 40 30% 97%;
+    --section-teal-light: 190 40% 96%;
+    --section-dark: 195 55% 12%;
+
     --shadow-subtle: 0 0 0 1px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.05);
     --shadow-hover: 0 0 0 1px rgba(0,0,0,0.05), 0 20px 40px -12px rgba(0,0,0,0.1);
     --shadow-card: 0 0 0 1px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.05), 0 12px 24px -12px rgba(0,0,0,0.1);
+    --shadow-elevated: 0 25px 50px -12px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
   }
 }
 
@@ -70,6 +76,56 @@
     @apply font-display tracking-tight;
     text-wrap: balance;
     letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .section-gradient-teal {
+    background: linear-gradient(135deg, hsl(190 40% 96%) 0%, hsl(195 30% 98%) 50%, hsl(185 35% 95%) 100%);
+  }
+
+  .section-gradient-warm {
+    background: linear-gradient(135deg, hsl(40 30% 97%) 0%, hsl(30 20% 98%) 50%, hsl(45 25% 96%) 100%);
+  }
+
+  .section-gradient-dark {
+    background: linear-gradient(135deg, hsl(195 55% 12%) 0%, hsl(200 50% 16%) 50%, hsl(190 45% 14%) 100%);
+  }
+
+  .section-gradient-accent {
+    background: linear-gradient(135deg, hsl(190 70% 50%) 0%, hsl(195 60% 40%) 100%);
+  }
+
+  .section-mesh {
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(at 20% 80%, hsl(190 70% 50% / 0.06) 0px, transparent 50%),
+      radial-gradient(at 80% 20%, hsl(195 55% 20% / 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, hsl(190 40% 96% / 0.5) 0px, transparent 70%);
+  }
+
+  .section-dots {
+    background-image: radial-gradient(hsl(195 20% 85%) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .section-diagonal {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 14px,
+      hsl(195 20% 90% / 0.4) 14px,
+      hsl(195 20% 90% / 0.4) 15px
+    );
+  }
+
+  .glass-card {
+    @apply bg-background/70 backdrop-blur-xl border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+
+  .hero-glow {
+    background: radial-gradient(ellipse 80% 60% at 50% 40%, hsl(190 70% 50% / 0.12) 0%, transparent 70%);
   }
 }
 
