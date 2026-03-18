@@ -78,7 +78,16 @@ const galleryPreview = [
 ];
 
 /* ─── Component ─── */
-const Index = () => (
+const Index = () => {
+  const [liveReviews, setLiveReviews] = useState<any[]>([]);
+  useEffect(() => {
+    supabase.from("reviews").select("*").eq("approved", true).order("created_at", { ascending: false }).limit(6).then(({ data }) => {
+      if (data && data.length > 0) setLiveReviews(data.map((r: any) => ({ name: r.name, text: r.review_text, rating: r.rating })));
+    });
+  }, []);
+  const testimonials = liveReviews.length > 0 ? liveReviews : defaultTestimonials;
+
+  return (
   <div className="overflow-hidden">
 
     {/* ═══════════════════ HERO ═══════════════════ */}
