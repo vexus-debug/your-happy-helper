@@ -29,8 +29,6 @@ const images = [
   { src: reception, alt: "Reception area with dental model display", category: "Waiting & Reception" },
   { src: operatory, alt: "Modern dental operatory with digital equipment", category: "Surgery Rooms" },
   { src: dentalChair, alt: "Dental chair and treatment room", category: "Surgery Rooms" },
-  { src: operatory, alt: "Fully equipped surgery suite — digital imaging", category: "Surgery Rooms" },
-  { src: dentalChair, alt: "State-of-the-art dental unit", category: "Surgery Rooms" },
   { src: treatment1, alt: "Dental treatment in progress", category: "Treatment" },
   { src: treatment2, alt: "Professional dental care by our team", category: "Treatment" },
   { src: treatment3, alt: "Expert dental procedure with assistant", category: "Treatment" },
