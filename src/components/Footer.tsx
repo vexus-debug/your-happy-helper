@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Clock, Mail, MessageCircle } from "lucide-react";
+import { socialLinks } from "./SocialLinks";
 
 const Footer = () => (
   <footer className="bg-foreground text-background">
@@ -10,6 +11,13 @@ const Footer = () => (
           <p className="font-body text-sm leading-relaxed opacity-70">
             Expert dental care that feels like family. Modern, gentle dentistry at No 6 November Street, near Chief Palace Layout, Karu, Abuja.
           </p>
+          <div className="flex gap-3 mt-4">
+            {socialLinks.map((s) => (
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="flex items-center justify-center h-9 w-9 rounded-full bg-background/10 text-background/70 hover:bg-accent hover:text-accent-foreground transition-all duration-200">
+                <s.icon className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>

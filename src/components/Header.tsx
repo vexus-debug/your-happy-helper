@@ -98,6 +98,15 @@ const Header = () => {
                 ))}
               </nav>
 
+              {/* Social icons */}
+              <div className="px-6 flex gap-3">
+                {socialLinks.map((s) => (
+                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="flex items-center justify-center h-9 w-9 rounded-full bg-primary-foreground/10 text-primary-foreground/70 hover:bg-accent hover:text-accent-foreground transition-all duration-200">
+                    <s.icon className="h-4 w-4" />
+                  </a>
+                ))}
+              </div>
+
               {/* Bottom CTA */}
               <div className="p-6 border-t border-primary-foreground/10 space-y-3">
                 <a
